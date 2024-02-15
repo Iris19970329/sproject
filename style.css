@@ -1,0 +1,192 @@
+/* 導覽列 */
+nav {
+    background-color: #1D9F9F;
+
+}
+
+.navbar-brand {
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+    margin: 5px;
+}
+
+.navbar-brand:visited {
+    color: white;
+}
+
+
+
+.nav-link {
+    color: white;
+    font-size: 18px;
+    padding: 10px 50px;
+    border-radius: 10px;
+    transition: 0.2s;
+    margin: 12px 12px;
+}
+
+.nav-link:visited {
+    color: white;
+}
+
+.nav-link:hover {
+    color: #1D9F9F;
+    background: #fefefe;
+}
+
+button[type="submit"]:visited {
+    color: white;
+}
+
+button[type="submit"]:hover{
+    color: #1D9F9F;
+    background: #fefefe;
+
+}
+
+
+/* 輪播 */
+.carousel-item>img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+  }
+
+/* 提案類型 */
+figure>a {
+    text-decoration: none;
+}
+
+figcaption{
+    color: black;
+}
+
+figure>a:visited {
+    color: black;
+    text-decoration: none;
+}
+
+.bounceIn{
+    transition: 0.2s;
+}
+
+/* 卡片 */
+.card-title{
+    color: black;
+    text-decoration: none;
+}
+
+.card-title:visited {
+    color: black;
+    text-decoration: none
+}
+
+.card-title:hover{
+    text-decoration: underline;
+    color: #1D9F9F;
+}
+
+
+/* footer */
+.footer a{ 
+    color: white;
+    text-decoration: none;
+}
+
+.footer a:visited{ 
+    color: inherit;
+    text-decoration: none
+}
+
+.footer a:hover{ 
+    text-decoration:underline;
+}
+
+/* 右下角modal */
+.fixed-button {
+    position: fixed;
+    bottom: 5px;
+    right: 5px;
+    border-radius: 5px;
+}
+
+/* 產品頁進度條 */
+.track{
+    margin: 4em 0 8em;
+}
+#progress{
+    list-style:none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    position: relative;
+    text-align: center;
+}
+
+#progress li{
+    width: 20%;
+    position: relative;
+}
+
+#progress li::before{
+    content: '\2713';
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    width: 50px;
+    align-items: center;
+    font-size: 2rem;
+    height: 50px;
+    background: #1D9F9F;
+    color: #fefefe;
+    border-radius: 50%;
+    z-index: 11111;
+}
+
+#progress li:last-child::before{
+    content: '\2713';
+    font-weight: bold;
+    background: #1D9F9F;
+
+}
+
+#progress::before{
+    content: '';
+    position: absolute;
+    top: 20px;
+    width: 55%;
+    margin-left: 35px;
+    height: 10px;
+    background: #1D9F9F;
+    z-index: 111;
+
+}
+
+#progress::after{
+    content: '';
+    position: absolute;
+    top: 20px;
+    width: 80%;
+    background: #fefefe;
+
+}
+
+.lists{
+    display: flex;
+    gap: 32rem;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.list{
+    display: flex;
+    gap: 1rem;
+    flex: 1 1 50px;
+}
+
+.list p{
+    font-size: 1.1rem;
+}
